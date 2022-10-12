@@ -5,25 +5,25 @@
  * @link       http://github.com/zendframework/zf2 for the canonical source repository
  * @copyright  Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd New BSD License
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage UnitTests
  */
 
-namespace ZendServiceTest\Apple\Apns;
+namespace LaminasTest\Apple\Apns;
 
 use PHPUnit\Framework\TestCase;
-use ZendServiceTest\Apple\Apns\TestAsset\MessageClient;
-use ZendService\Apple\Apns\Message;
-use ZendService\Apple\Apns\Response\Message as MessageResponse;
+use LaminasTest\Apple\Apns\TestAsset\MessageClient;
+use Laminas\Apple\Apns\Message;
+use Laminas\Apple\Apns\Response\Message as MessageResponse;
 
 /**
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage UnitTests
- * @group      ZendService
- * @group      ZendService_Apple
- * @group      ZendService_Apple_Apns
+ * @group      Laminas
+ * @group      Laminas_Apple
+ * @group      Laminas_Apple_Apns
  */
 class MessageClientTest extends TestCase
 {

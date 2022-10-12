@@ -8,7 +8,7 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Exception;
+namespace Laminas\Apple\Exception;
 
 class RuntimeException extends \RuntimeException
 {

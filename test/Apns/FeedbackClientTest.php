@@ -8,18 +8,18 @@
  * @package   Zend_Service
  */
 
-namespace ZendServiceTest\Apple\Apns;
+namespace LaminasTest\Apple\Apns;
 
 use PHPUnit\Framework\TestCase;
-use ZendServiceTest\Apple\Apns\TestAsset\FeedbackClient;
+use LaminasTest\Apple\Apns\TestAsset\FeedbackClient;
 
 /**
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage UnitTests
- * @group      ZendService
- * @group      ZendService_Apple
- * @group      ZendService_Apple_Apns
+ * @group      Laminas
+ * @group      Laminas_Apple
+ * @group      Laminas_Apple_Apns
  */
 class FeedbackClientTest extends TestCase
 {

@@ -1,26 +1,26 @@
 <?php
 /**
- * @see       https://github.com/zendframework/ZendService_Apple_Apns for the canonical source repository
+ * @see       https://github.com/zendframework/Laminas_Apple_Apns for the canonical source repository
  * @copyright Copyright (c) 2014-2018 Zend Technologies USA Inc. (https://www.zend.com)
- * @license   https://github.com/zendframework/ZendService_Apple_Apns/blob/master/LICENSE.md New BSD License
+ * @license   https://github.com/zendframework/Laminas_Apple_Apns/blob/master/LICENSE.md New BSD License
  */
 
-namespace ZendServiceTest\Apple\Apns;
+namespace LaminasTest\Apple\Apns;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use stdClass;
-use Zend\Json\Encoder as JsonEncoder;
-use ZendService\Apple\Apns\Message;
-use ZendService\Apple\Apns\Message\Alert;
+use Laminas\Json\Encoder as JsonEncoder;
+use Laminas\Apple\Apns\Message;
+use Laminas\Apple\Apns\Message\Alert;
 
 /**
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage UnitTests
- * @group      ZendService
- * @group      ZendService_Apple
- * @group      ZendService_Apple_Apns
+ * @group      Laminas
+ * @group      Laminas_Apple
+ * @group      Laminas_Apple_Apns
  */
 class MessageTest extends TestCase
 {
@@ -34,9 +34,9 @@ class MessageTest extends TestCase
     {
         $text = 'my alert';
         $ret = $this->message->setAlert($text);
-        $this->assertInstanceOf('ZendService\Apple\Apns\Message', $ret);
+        $this->assertInstanceOf('Laminas\Apple\Apns\Message', $ret);
         $checkText = $this->message->getAlert();
-        $this->assertInstanceOf('ZendService\Apple\Apns\Message\Alert', $checkText);
+        $this->assertInstanceOf('Laminas\Apple\Apns\Message\Alert', $checkText);
         $this->assertEquals($text, $checkText->getBody());
     }
 

@@ -8,17 +8,17 @@
  * @package   Zend_Service
  */
 
-namespace ZendServiceTest\Apple\Apns\TestAsset;
+namespace LaminasTest\Apple\Apns\TestAsset;
 
-use ZendService\Apple\Apns\Exception;
-use ZendService\Apple\Apns\Client\Message as ZfMessageClient;
+use Laminas\Apple\Apns\Exception;
+use Laminas\Apple\Apns\Client\Message as ZfMessageClient;
 
 /**
  * Message Client Proxy
  * This class is utilized for unit testing purposes
  *
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage Apns
  */
 class MessageClient extends ZfMessageClient

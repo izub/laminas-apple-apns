@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Apns\Client;
+namespace Laminas\Apple\Apns\Client;
 
-use ZendService\Apple\Exception;
-use ZendService\Apple\Exception\StreamSocketClientException;
+use Laminas\Apple\Exception;
+use Laminas\Apple\Exception\StreamSocketClientException;
 
 /**
  * Apple Push Notification Abstract Client
@@ -95,12 +95,14 @@ abstract class AbstractClient
             throw new StreamSocketClientException($errstr, $errno, 1, $errfile, $errline);
         });
 
+        $defaultSocketTimeout = ini_get('default_socket_timeout');
+
         try {
             $this->socket = stream_socket_client(
                 $host,
                 $errno,
                 $errstr,
-                ini_get('default_socket_timeout'),
+                $defaultSocketTimeout ? (float)$defaultSocketTimeout : null,
                 STREAM_CLIENT_CONNECT,
                 stream_context_create(
                     [
@@ -128,7 +130,7 @@ abstract class AbstractClient
                 $errstr
             ));
         }
-        stream_set_blocking($this->socket, 0);
+        stream_set_blocking($this->socket, false);
         stream_set_write_buffer($this->socket, 0);
 
         return $this;

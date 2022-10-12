@@ -8,9 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Apns\Response;
+namespace Laminas\Apple\Apns\Response;
 
-use ZendService\Apple\Exception;
+use Laminas\Apple\Exception;
 
 /**
  * Feedback Response

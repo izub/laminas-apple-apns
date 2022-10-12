@@ -5,22 +5,22 @@
  * @link      http://github.com/zendframework/zf2 for the canonical source repository
  * @copyright Copyright (c) 2005-2014 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage Apns
  */
 
-namespace ZendService\Apple\Apns\Client;
+namespace Laminas\Apple\Apns\Client;
 
-use ZendService\Apple\Exception;
-use ZendService\Apple\Apns\Message as ApnsMessage;
-use ZendService\Apple\Apns\Response\Message as MessageResponse;
+use Laminas\Apple\Exception;
+use Laminas\Apple\Apns\Message as ApnsMessage;
+use Laminas\Apple\Apns\Response\Message as MessageResponse;
 
 /**
  * Message Client
  *
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage Apns
  */
 class Message extends AbstractClient

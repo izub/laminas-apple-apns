@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Apns\Client;
+namespace Laminas\Apple\Apns\Client;
 
-use ZendService\Apple\Exception;
-use ZendService\Apple\Apns\Response\Feedback as FeedbackResponse;
+use Laminas\Apple\Exception;
+use Laminas\Apple\Apns\Response\Feedback as FeedbackResponse;
 
 /**
  * Feedback Client
@@ -30,7 +30,7 @@ class Feedback extends AbstractClient
     /**
      * Get Feedback
      *
-     * @return array of ZendService\Apple\Apns\Response\Feedback
+     * @return array of Laminas\Apple\Apns\Response\Feedback
      */
     public function feedback()
     {

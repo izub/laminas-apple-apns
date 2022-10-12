@@ -8,9 +8,9 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Apns\Message;
+namespace Laminas\Apple\Apns\Message;
 
-use ZendService\Apple\Exception;
+use Laminas\Apple\Exception;
 
 /**
  * Message Alert Object

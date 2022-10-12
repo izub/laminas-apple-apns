@@ -4,7 +4,7 @@
  * @author Soshnikov Artem <213036@skobka.com>
  */
 
-namespace ZendService\Apple\Exception;
+namespace Laminas\Apple\Exception;
 
 use ErrorException;
 

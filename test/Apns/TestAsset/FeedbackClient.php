@@ -8,17 +8,17 @@
  * @package   Zend_Service
  */
 
-namespace ZendServiceTest\Apple\Apns\TestAsset;
+namespace LaminasTest\Apple\Apns\TestAsset;
 
-use ZendService\Apple\Apns\Exception;
-use ZendService\Apple\Apns\Client\Feedback as ZfFeedbackClient;
+use Laminas\Apple\Apns\Exception;
+use Laminas\Apple\Apns\Client\Feedback as ZfFeedbackClient;
 
 /**
  * Feedback Client Proxy
  * This class is utilized for unit testing purposes
  *
- * @category   ZendService
- * @package    ZendService_Apple
+ * @category   Laminas
+ * @package    Laminas_Apple
  * @subpackage Apns
  */
 class FeedbackClient extends ZfFeedbackClient

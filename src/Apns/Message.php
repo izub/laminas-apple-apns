@@ -8,10 +8,10 @@
  * @package   Zend_Service
  */
 
-namespace ZendService\Apple\Apns;
+namespace Laminas\Apple\Apns;
 
-use Zend\Json\Encoder as JsonEncoder;
-use ZendService\Apple\Exception;
+use Laminas\Json\Encoder as JsonEncoder;
+use Laminas\Apple\Exception;
 
 /**
  * APNs Message
@@ -168,7 +168,7 @@ class Message
     /**
      * Set Expiration
      *
-     * @param  int|DateTime $expire
+     * @param  int|\DateTime $expire
      * @return Message
      */
     public function setExpire($expire)
@@ -352,7 +352,7 @@ class Message
      * @param  array|null $urlArgs
      * @return Message
      */
-    public function setUrlArgs(array $urlArgs)
+    public function setUrlArgs(?array $urlArgs)
     {
         $this->urlArgs = $urlArgs;
 
